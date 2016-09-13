@@ -7,7 +7,7 @@
 ;;; lang-autoit.el --- AutoIt3 language support
 
 ;; install and initialization
-(add-to-list 'load-path "C:/Users/agaida/AppData/Roaming/.emacs.d/lang/autoit-mode")
+(add-to-list 'load-path "~/.emacs.d/lang/autoit-mode")
 
 ;; Fix: undeclared variable on upstream code
 (defvar *autoit-smie-backward-bob* nil)

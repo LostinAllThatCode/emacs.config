@@ -122,17 +122,11 @@
     (find-file-other-frame (dired-get-file-for-visit)))
 
 ;; layout style
+
+(load-theme 'gruber-darker t)
 (add-to-list 'default-frame-alist '(font . "Liberation Mono-8.5"))
 (set-face-attribute 'default t :font "Liberation Mono-8.5")
-(set-face-attribute 'font-lock-builtin-face nil :foreground "#DAB98F")
-(set-face-attribute 'font-lock-comment-face nil :foreground "gray50")
-(set-face-attribute 'font-lock-constant-face nil :foreground "olive drab")
-(set-face-attribute 'font-lock-doc-face nil :foreground "gray50")
-(set-face-attribute 'font-lock-function-name-face nil :foreground "burlywood3")
-(set-face-attribute 'font-lock-keyword-face nil :foreground "DarkGoldenrod3")
-(set-face-attribute 'font-lock-string-face nil :foreground "olive drab")
-(set-face-attribute 'font-lock-type-face nil :foreground "DarkGoldenrod3")
-(set-face-attribute 'font-lock-variable-name-face nil :foreground "burlywood3")
+
 
 ;; window customization 
 (defun post-load-stuff ()
@@ -145,7 +139,6 @@
   (split-window-horizontally)
   (set-foreground-color "burlywood3")
   (set-background-color "#161616")
-  (set-cursor-color "#40FF40")
   (set-default 'truncate-lines t))
 
 ;; compilation buffer setup
